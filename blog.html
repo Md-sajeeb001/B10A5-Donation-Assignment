@@ -32,13 +32,13 @@
 <body class="bg-bodyColor font-fontFamily">
     
     <header>
-        <nav class="flex items-center justify-between w-full lg:w-10/12 lg:mx-auto lg:py-8 py-7">
+        <nav class="flex items-center justify-between w-full lg:w-10/12 lg:mx-auto lg:py-8 p-6">
             <div>
-                <button id="homePage" class="btn px-8 bg-BtnColor text-lg font-semibold">Home</button>
+                <button id="homePage" class="btn px-8 bg-BtnColor  text-lg font-semibold">Home</button>
             </div>
             <div class="flex items-center space-x-5 ">
                 <img src="./assets/logo.png" alt="">
-                <h2 class="lg:text-2xl lg:visible md:visible  text-lg font-semibold">Donate Bangladesh</h2>
+                <h2 class="lg:text-2xl text-lg font-semibold">Donate Bangladesh</h2>
             </div>
             <div class="flex items-center space-x-4">
                 <img src="./assets/coin.png" alt="">
@@ -56,36 +56,38 @@
     </header> 
 
     <!-- Blog section -->
-    <div id="blogSection" class="join join-vertical w-full ">
-        <div class="collapse collapse-arrow join-item border-base-300 border">
-          <input type="radio" name="my-accordion-4" checked="checked" />
-          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-          <div class="collapse-content">
-            <p>hello</p>
-          </div>
+   <main class="lg:pb-16 p-6 flex items-center justify-center bg-white">
+    <div id="blogSection" class="join join-vertical w-full lg:w-10/12  bg-white">
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" checked="checked" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
         </div>
-        <div class="collapse collapse-arrow join-item border-base-300 border">
+      </div>
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" />
           <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
           <div class="collapse-content">
             <p>hello</p>
           </div>
-        </div>
-        <div class="collapse collapse-arrow join-item border-base-300 border">
-          <input type="radio" name="my-accordion-4" />
-          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-          <div class="collapse-content">
-            <p>hello</p>
-          </div>
-        </div>
-        <div class="collapse collapse-arrow join-item border-base-300 border">
-            <input type="radio" name="my-accordion-4" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-            <div class="collapse-content">
-              <p>hello</p>
-            </div>
-        </div>
+      </div>
     </div>
+   </main>
 
     <script src="./js/index.js"></script>
     <script src="./js/blog.js"></script>
