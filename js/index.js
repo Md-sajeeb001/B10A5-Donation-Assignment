@@ -30,9 +30,9 @@ document.getElementById('modelBtn1').addEventListener('click', function(){
     createDivEL.innerHTML = `
     
     <section class="lg:w-10/12 w-full mx-auto mb-4">
-        <div class="shadow-md rounded-lg px-8 py-6 space-y-5 border-2">
-            <p class="">${inputValue} Taka is Donated for Donate for flood at Noakhali, Bangladesh</p>
-            <p>${new Date().toLocaleString()}</p>
+        <div class="shadow-lg rounded-lg px-8 py-6 space-y-5 border-2">
+            <p class="text-lg font-semibold">${inputValue} Taka is Donated for Donate for flood at Feni, Bangladesh</p>
+            <p class="text-secondaryText">${new Date().toLocaleString()}</p>
         </div>
     </section>
     `
@@ -60,9 +60,9 @@ document.getElementById('modelBtn2').addEventListener('click', function(){
     createDivEL.innerHTML = `
     
     <section class="lg:w-10/12 w-full mx-auto mb-4">
-        <div class="shadow-md rounded-lg px-8 py-6 space-y-5 border-2">
-            <p class="">${feniInputValue} Taka is Donated for Donate for flood at Feni, Bangladesh</p>
-            <p>${new Date().toLocaleString()}</p>
+        <div class="shadow-lg rounded-lg px-8 py-6 space-y-5 border-2">
+            <p class="text-lg font-semibold">${feniInputValue} Taka is Donated for Donate for flood at Feni, Bangladesh</p>
+            <p class="text-secondaryText">${new Date().toLocaleString()}</p>
         </div>
     </section>
     `
@@ -90,9 +90,9 @@ document.getElementById('modelBtn3').addEventListener('click', function(){
     createDivEL.innerHTML = `
     
     <section class="lg:w-10/12 w-full mx-auto mb-4">
-        <div class="shadow-md rounded-lg px-8 py-6 space-y-5 border-2">
-            <p class="">${injuredMovmentInput} Taka is Donated for Donate for flood at Bangladesh</p>
-            <p>${new Date().toLocaleString()}</p>
+        <div class="shadow-lg rounded-lg px-8 py-6 space-y-5 border-2">
+            <p class="text-lg font-semibold">${injuredMovmentInput} Taka is Donated for Donate for flood at Bangladesh</p>
+            <p class="text-secondaryText">${new Date().toLocaleString()}</p>
         </div>
     </section>
     `
@@ -111,5 +111,18 @@ document.getElementById("blogPage").addEventListener('click', function(){
 
 document.getElementById('historyBtn').addEventListener('click', function(){
     const mainPage = document.getElementById('mainPage');
-    mainPage.classList.add('hidden')
-})
+    mainPage.classList.add('hidden');
+
+    document.getElementById('historySection').classList.remove('hidden')
+
+    const colorChg = document.getElementById('historyBtn');
+    colorChg.classList.add('bg-BtnColor')
+    
+});
+
+document.getElementById('donationBtn').addEventListener('click', function(){
+    document.getElementById('historySection').classList.remove('hidden')
+
+    const mainPage = document.getElementById('mainPage');
+    mainPage.classList.remove('hidden');
+});
