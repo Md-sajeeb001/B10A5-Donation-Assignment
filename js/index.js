@@ -29,7 +29,7 @@ document.getElementById('modelBtn1').addEventListener('click', function(){
 
     createDivEL.innerHTML = `
     
-    <section class="lg:w-10/12 w-full mx-auto space-y-4">
+    <section class="lg:w-10/12 w-full mx-auto mb-4">
         <div class="shadow-md rounded-lg px-8 py-6 space-y-5 border-2">
             <p class="">${inputValue} Taka is Donated for Donate for flood at Noakhali, Bangladesh</p>
             <p>${new Date().toLocaleString()}</p>
@@ -54,6 +54,20 @@ document.getElementById('modelBtn2').addEventListener('click', function(){
     const addingDonate = btnValueFeni + feniInputValue;
     document.getElementById('feniAddBtn').innerText = addingDonate;
 
+    const historySection = document.getElementById('historySection');
+    const createDivEL = document.createElement('div');
+
+    createDivEL.innerHTML = `
+    
+    <section class="lg:w-10/12 w-full mx-auto mb-4">
+        <div class="shadow-md rounded-lg px-8 py-6 space-y-5 border-2">
+            <p class="">${feniInputValue} Taka is Donated for Donate for flood at Feni, Bangladesh</p>
+            <p>${new Date().toLocaleString()}</p>
+        </div>
+    </section>
+    `
+    historySection.appendChild(createDivEL);
+
 });
 
 document.getElementById('modelBtn3').addEventListener('click', function(){
@@ -69,6 +83,21 @@ document.getElementById('modelBtn3').addEventListener('click', function(){
     
     const addingDonate = injuredMovmentInput + btnValueInjured;
     document.getElementById('InjuredMovmentBtn').innerText = addingDonate;
+
+    const historySection = document.getElementById('historySection');
+    const createDivEL = document.createElement('div');
+
+    createDivEL.innerHTML = `
+    
+    <section class="lg:w-10/12 w-full mx-auto mb-4">
+        <div class="shadow-md rounded-lg px-8 py-6 space-y-5 border-2">
+            <p class="">${injuredMovmentInput} Taka is Donated for Donate for flood at Bangladesh</p>
+            <p>${new Date().toLocaleString()}</p>
+        </div>
+    </section>
+    `
+    historySection.appendChild(createDivEL);
+
 
 });
 
