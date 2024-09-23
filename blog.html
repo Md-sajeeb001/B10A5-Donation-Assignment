@@ -82,14 +82,26 @@
         <input type="radio" name="my-accordion-4" />
         <div class="collapse-title text-xl font-medium">What is even delegation in the context of the DOM, and why is useful? </div>
         <div class="collapse-content">
-          <p class="text-secondaryText text-lg">hello</p>
+          <p class="text-secondaryText text-lg">kono section ar perentsNode a childNode remove korar jonno event handelar add perentNode k event handelar add kore deya k event Delegation bole, 
+          <br> 
+          amera event handel kore kono PerentNode ar ChildNode add ba remove korte chyle shub shojey korte pari function ar akti perameter deya function(event) > event.target.perantNode.removeChild(event.target) kore amera akta element kono perantNode thke sora te pari  
+          </p>
         </div>
       </div>
       <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" />
           <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and style using the DOM?</div>
           <div class="collapse-content">
-            <p class="text-secondaryText text-lg">hello</p>
+            <p class="text-secondaryText text-lg">
+                DOM Use kore amera khub sohojey akta element k style abong tar attributes set get add ba change korte pari. <br>
+
+                1. attributes add and remove !
+                document.getElementById('id').setAttributes('href');
+                document.getElementById('id').getAttributes('src');
+                
+                2. styleing element using DOM !
+                document.getElementById('id').style('bg-red-500');
+            </p>
           </div>
       </div>
     </div>
