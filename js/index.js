@@ -52,11 +52,5 @@ document.getElementById('modelBtn3').addEventListener('click', function(){
 // Blog page !
 
 document.getElementById('blogPage').addEventListener('click', function(){
-    const blogPage = document.getElementById('mainPage');
-    blogPage.classList.add('hidden');
-
-   document.getElementById('blogSection').classList.remove('hidden')
-
-
+    console.log('blog btn is clicked')
 })
-
