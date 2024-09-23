@@ -31,7 +31,7 @@ document.getElementById('modelBtn1').addEventListener('click', function(){
     
     <section class="lg:w-10/12 w-full mx-auto mb-4">
         <div class="shadow-lg rounded-lg px-8 py-6 space-y-5 border-2">
-            <p class="text-lg font-semibold">${inputValue} Taka is Donated for Donate for flood at Feni, Bangladesh</p>
+            <p class="text-lg font-semibold">${inputValue} Taka is Donated for Donate for flood at Nowakhali, Bangladesh</p>
             <p class="text-secondaryText">${new Date().toLocaleString()}</p>
         </div>
     </section>
