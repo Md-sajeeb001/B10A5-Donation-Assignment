@@ -9,7 +9,7 @@ function getTextValueById(id){
 
 // ======================================================================== //
 
-document.getElementById('modelBtn').addEventListener('click',function(){
+document.getElementById('modelBtn1').addEventListener('click',function(){
     const inputValue = getInputValueById('donateInputValue');
     const CurrentBalance = getTextValueById('current-balance');
     const btnValue = getTextValueById('addDonationNoakhali');
@@ -51,6 +51,6 @@ document.getElementById('modelBtn3').addEventListener('click', function(){
 
 // Blog page !
 
-document.getElementById('blogPage').addEventListener('click', function(){
-    console.log('blog btn is clicked')
+document.getElementById("blogPage").addEventListener('click', function(){
+    window.location.href = '/blog.html'
 })
