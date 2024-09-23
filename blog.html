@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <!-- tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy UI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                bodyColor: '#f9f7f3',
+                BtnColor: '#b4f461',
+                secondaryText: '#565654',
+                // fontFamily: "Inter,sans-serif", 
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-bodyColor font-fontFamily">
+    
+    <header>
+        <nav class="flex items-center justify-between w-full lg:w-10/12 lg:mx-auto lg:py-8 py-7">
+            <div>
+                <button id="blogPage" class="btn px-8 bg-BtnColor text-lg font-semibold">Blog</button>
+            </div>
+            <div class="flex items-center space-x-5 ">
+                <img src="./assets/logo.png" alt="">
+                <h2 class="lg:text-2xl lg:visible md:visible  text-lg font-semibold">Donate Bangladesh</h2>
+            </div>
+            <div class="flex items-center space-x-4">
+                <img src="./assets/coin.png" alt="">
+                <div class="flex items-center space-x-2 text-xl font-semibold text-secondaryText">
+                    <span id="current-balance">5000</span>
+                    <h2>BDT</h2>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="space-x-4 py-16 bg-white text-center"> 
+            <button class="btn bg-BtnColor font-semibold px-7 text-lg">Donation</button>
+            <button class="btn bg-transparent border font-semibold px-5 border-secondaryText text-lg">History</button>
+        </div>
+    </header> 
+
+    <!-- Blog section -->
+    <div id="blogSection" class=" join join-vertical w-full ">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
