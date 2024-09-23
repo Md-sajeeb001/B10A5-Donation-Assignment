@@ -11,6 +11,9 @@ function getTextValueById(id){
 
 document.getElementById('modelBtn1').addEventListener('click', function(){
     const inputValue = getInputValueById('donateInputValue');
+    if(inputValue <= 0 || isNaN(inputValue)){
+       return  alert("Please provid a valid input")
+    }
     const CurrentBalance = getTextValueById('current-balance');
     const btnValue = getTextValueById('addDonationNoakhali');
 
@@ -25,6 +28,9 @@ document.getElementById('modelBtn1').addEventListener('click', function(){
 
 document.getElementById('modelBtn2').addEventListener('click', function(){
     const feniInputValue = getInputValueById('inputValueFeni');
+    if(feniInputValue <= 0 || isNaN(feniInputValue)){
+        return  alert("Please provid a valid input")
+     }
     const CurrentBalanceFeni = getTextValueById('current-balance');
     const btnValueFeni = getTextValueById('feniAddBtn');
 
@@ -38,6 +44,9 @@ document.getElementById('modelBtn2').addEventListener('click', function(){
 
 document.getElementById('modelBtn3').addEventListener('click', function(){
     const injuredMovmentInput = getInputValueById('InjuredMovment');
+    if(injuredMovmentInput <= 0 || isNaN(injuredMovmentInput)){
+        return  alert("Please provid a valid input")
+     }
     const CurrentBalanceInjured = getTextValueById('current-balance');
     const btnValueInjured = getTextValueById('InjuredMovmentBtn');
 
