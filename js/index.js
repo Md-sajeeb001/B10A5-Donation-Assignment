@@ -9,7 +9,7 @@ function getTextValueById(id){
 
 // ======================================================================== //
 
-document.getElementById('modelBtn1').addEventListener('click',function(){
+document.getElementById('modelBtn1').addEventListener('click', function(){
     const inputValue = getInputValueById('donateInputValue');
     const CurrentBalance = getTextValueById('current-balance');
     const btnValue = getTextValueById('addDonationNoakhali');
