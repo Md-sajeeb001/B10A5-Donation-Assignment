@@ -103,7 +103,6 @@ document.getElementById('modelBtn3').addEventListener('click', function(){
 });
 
 // Blog page !
-
 document.getElementById("blogPage").addEventListener('click', function(){
     window.location.href = './blog.html'
 });
@@ -116,14 +115,24 @@ document.getElementById('historyBtn').addEventListener('click', function(){
 
     document.getElementById('historySection').classList.remove('hidden')
 
-    const colorChg = document.getElementById('historyBtn');
-    colorChg.classList.add('bg-BtnColor')
+    // history btn !
+    document.getElementById('historyBtn').classList.add('bg-BtnColor');
+    
+    // donation btn !
+    document.getElementById('donationBtn').classList.remove('bg-BtnColor')
     
 });
 
 document.getElementById('donationBtn').addEventListener('click', function(){
-    document.getElementById('historySection').classList.remove('hidden')
+    document.getElementById('historySection').classList.add('hidden')
 
     const mainPage = document.getElementById('mainPage');
     mainPage.classList.remove('hidden');
+
+    // history btn !
+    document.getElementById('historyBtn').classList.remove('bg-BtnColor');
+    
+    // donation btn !
+    document.getElementById('donationBtn').classList.add('bg-BtnColor')
+
 });
