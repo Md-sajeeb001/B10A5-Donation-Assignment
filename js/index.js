@@ -9,6 +9,7 @@ function getTextValueById(id){
 
 // ======================================================================== //
 
+
 document.getElementById('modelBtn1').addEventListener('click', function(){
     const inputValue = getInputValueById('donateInputValue');
     if(inputValue <= 0 || isNaN(inputValue)){
