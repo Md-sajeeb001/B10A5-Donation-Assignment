@@ -29,40 +29,40 @@
         }
       </script>
 </head>
-<body class="bg-bodyColor font-fontFamily">
+<body class="bg-bodyColor scroll-smooth">
     
-    <header>
-        <nav class="flex items-center justify-between w-full lg:w-10/12 lg:mx-auto lg:py-8 p-6">
+    <header class="sticky left-0 top-0 z-20 backdrop-filter backdrop-blur-2xl bg-opacity-100 ">
+        <nav class="flex items-center justify-between w-full lg:w-10/12 mx-auto py-8 px-4 lg:px-0" >
             <div>
-                <button id="blogPage" class="btn px-8 bg-BtnColor text-lg font-semibold">Blog</button>
+                <button id="blogPage" class="btn px-8 bg-BtnColor text-lg font-semibold border-none">Blog</button>
             </div>
-            <div class="flex items-center space-x-5 ">
-                <img src="./assets/logo.png" alt="">
-                <h2 class="lg:text-2xl text-lg font-semibold">Donate Bangladesh</h2>
+            <div class="flex items-center lg:space-x-5">
+                <img class="pl-16" src="./assets/logo.png" alt="">
+                <h2 class="lg:text-2xl text-xl font-bold lg:visible invisible ">Donate Bangladesh</h2>
             </div>
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center lg:space-x-4 space-x-2 pr-6">
                 <img src="./assets/coin.png" alt="">
                 <div class="flex items-center space-x-2 text-xl font-semibold text-secondaryText">
-                    <span id="current-balance">5000</span>
+                    <span id="current-balance">5900</span>
                     <h2>BDT</h2>
                 </div>
             </div>
         </nav>
     
-        <div id="buttonSection" class="space-x-4 py-16 bg-white text-center"> 
-            <button id="donationBtn" class="btn bg-BtnColor font-semibold px-7 text-lg">Donation</button>
-            <button id="historyBtn" class="btn font-semibold px-5  text-lg">History</button>
+        <div id="buttonSection" class="space-x-4 py-8 text-center sticky right-0 top-0  backdrop-filter backdrop-blur-2xl bg-opacity-100"> 
+            <button id="donationBtn" class="btn bg-BtnColor font-semibold px-7 text-lg border-none">Donation</button>
+            <button id="historyBtn" class="btn font-semibold px-5 text-lg border-none">History</button>
         </div>
     </header> 
 
-    <main class="bg-white">
+    <main class="bg-white py-8 px-4 lg:px-0 lg:">
         <div id="mainPage" class="bg-white space-y-6 mb-8" >
-            <div class="hero lg:border-2 w-full lg:w-10/12 mx-auto rounded-xl">
+            <div class="hero lg:border-2 w-full lg:w-10/12 mx-auto rounded-xl shadow-md">
                 <div class="hero-content flex-col lg:flex-row-reverse gap-10">
                   <div class="text-center lg:text-left space-y-6">
                     <button class="btn text-secondaryText text-lg">
                         <img src="./assets/coin.png">
-                        <span id="addDonationNoakhali">1000</span>
+                        <span id="addDonationNoakhali">7000</span>
                         <h2>BDT</h2>
                     </button>
                     <h2 class="text-xl font-semibold">Donate for Flood at Noakhali, Bangladesh</h2>
@@ -92,12 +92,12 @@
                 </div>
             </div>
     
-            <div class="hero lg:border-2 w-full lg:w-10/12 mx-auto rounded-xl">
+            <div class="hero lg:border-2 w-full lg:w-10/12 mx-auto rounded-xl shadow-md">
                 <div class="hero-content flex-col lg:flex-row-reverse gap-10">
                   <div class="text-center lg:text-left space-y-6">
                     <button class="btn text-secondaryText text-lg">
                         <img src="./assets/coin.png">
-                        <span id="feniAddBtn">2000</span>
+                        <span id="feniAddBtn">4000</span>
                         <h2>BDT</h2>
                     </button>
                     <h2 class="text-xl font-semibold">Donate for Flood Relief in Feni,Bangladesh</h2>
@@ -126,15 +126,15 @@
                 </div>
             </div>
     
-            <div class="hero lg:border-2 w-full lg:w-10/12 mx-auto rounded-xl">
+            <div class="hero lg:border-2 w-full lg:w-10/12 mx-auto rounded-xl shadow-md">
                 <div class="hero-content flex-col lg:flex-row-reverse gap-10">
                   <div class="text-center lg:text-left space-y-6">
                     <button class="btn text-secondaryText text-lg">
                         <img src="./assets/coin.png">
-                        <span id="InjuredMovmentBtn">0</span>
+                        <span id="InjuredMovmentBtn">12000</span>
                         <h2>BDT</h2>
                     </button>
-                    <h2 class="text-xl font-semibold">Aid for Injured in the Quota Movement</h2>
+                    <h2 class="text-xl font-semibold">The birth of 36 july 2024, Bangladesh</h2>
                     <p class="text-secondaryText"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                     <input id="InjuredMovment" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
                     <button id="modelBtn3" class="btn w-full bg-BtnColor font-semibold text-lg" onclick="my_modal_3.showModal()">Donate Now</button>

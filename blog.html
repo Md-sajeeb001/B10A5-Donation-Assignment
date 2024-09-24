@@ -33,16 +33,16 @@
 </head>
 <body class="bg-bodyColor font-fontFamily">
     
-    <header>
-        <nav class="flex items-center justify-between w-full lg:w-10/12 lg:mx-auto lg:py-8 p-6">
+    <header class="sticky left-0 top-0 z-10 backdrop-filter backdrop-blur-2xl bg-opacity-100">
+        <nav class="flex items-center justify-between w-full lg:w-10/12 mx-auto py-8 px-4 lg:px-0">
             <div>
                 <button id="homePage" class="btn px-8 bg-BtnColor  text-lg font-semibold">Home</button>
             </div>
             <div class="flex items-center space-x-5 ">
-                <img src="./assets/logo.png" alt="">
-                <h2 class="lg:text-2xl text-lg font-semibold">Donate Bangladesh</h2>
+                <img class="lg:visible invisible" src="./assets/logo.png" alt="">
+                <h2 class="lg:text-2xl text-xl font-bold invisible lg:visible">Donate Bangladesh</h2>
             </div>
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center lg:space-x-4 space-x-2 pr-6">
                 <img src="./assets/coin.png" alt="">
                 <div class="flex items-center space-x-2 text-xl font-semibold text-secondaryText">
                     <span id="current-balance">5000</span>
@@ -53,13 +53,10 @@
     </header> 
 
     <!-- Blog section -->
-   <main class="lg:pb-16 p-6 mx-auto m-auto bg-white">
+    <main class="lg:pb-16 p-6 flex justify-center items-center flex-col bg-white">
    
-   <div class="">
-      <span class="text-4xl font-bold">Important FAQ <i class="fa-regular fa-circle-question -rotate-6"></i></span>
-   </div>
-   
-   <div>
+      <span class="text-4xl font-bold ">Important FAQ <i class="fa-regular fa-circle-question -rotate-6"></i></span>
+
       <div id="blogSection" class="join join-vertical w-full lg:w-10/12  bg-white pt-8">
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" checked="checked" />
@@ -102,14 +99,8 @@
             </div>
         </div>
       </div>
-   </div>
 
-     <!-- history section -->
-        
-     <section class="" id="blogHistorySection">
-
-     </section>
-   </main>
+    </main>
 
     <script src="./js/blog.js"></script>
     <script src="./js/index.js"></script>
